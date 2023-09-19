@@ -7,15 +7,15 @@ export class ProductsEntity {
     @PrimaryGeneratedColumn()
     id: number
 
-    @Column({ type: "varchar", length: 300 })
+    @Column({ type: "varchar" , nullable : true })
     @IsString()
     title_uz: string
 
-    @Column({ type: "varchar", length: 300 })
+    @Column({ type: "varchar" , nullable : true })
     @IsString()
     title_ru: string
 
-    @Column({ type: "varchar", length: 300 })
+    @Column({ type: "varchar" , nullable : true })
     @IsString()
     title_en: string
 

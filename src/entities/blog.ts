@@ -10,27 +10,27 @@ export class BlogEntity {
     @IsString()
     link: string
     
-    @Column({ type: "varchar", length: 300 })
+    @Column({ type: "varchar", nullable : true })
     @IsString()
     title_uz: string
 
-    @Column({ type: "varchar", length: 300 })
+    @Column({ type: "varchar", nullable : true })
     @IsString()
     title_en: string
 
-    @Column({ type: "varchar", length: 300 })
+    @Column({ type: "varchar", nullable : true })
     @IsString()
     title_ru: string
 
-    @Column({ type: "varchar", length: 2000 })
+    @Column({ type: "varchar" , nullable : true})
     @IsString()
     description_uz: string
 
-    @Column({ type: "varchar", length: 2000 })
+    @Column({ type: "varchar" , nullable : true})
     @IsString()
     description_en: string
 
-    @Column({ type: "varchar", length: 2000 })
+    @Column({ type: "varchar" , nullable : true})
     @IsString()
     description_ru: string
     @CreateDateColumn({ type: "timestamp" })
