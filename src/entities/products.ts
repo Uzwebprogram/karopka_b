@@ -30,6 +30,9 @@ export class ProductsEntity {
     @Column({ type: "text"})
     @IsString()
     description_en: string
+    @Column({ type: "text" , nullable : true })
+    @IsString()
+    type: string
     @Column({ type: "text"})
     @IsString()
     number: string
